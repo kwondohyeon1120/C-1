@@ -1,10 +1,17 @@
 #include <stdio.h>
 
 int main() {
-    char strc[5]="abcd";
-    printf("strc %%c: %c\n", strc);
-    printf("strc %%d: %d\n", strc);
-    printf("strc %%s: %s\n", strc);
-    printf("-----\n");
+    int num1, num2;
+
+    printf("First number: ");
+    scanf("%d", &num1);
+    printf("Second number: ");
+    scanf("%d", &num2);
+
+    printf("입력한 정수는 각각 [%d]와 [%d] 입니다.\n", num1, num2);
+    printf("------------\n");
+    printf("Sum: %d\n",num1+num2);
+    printf("Difference: %d\n",num1-num2);
+    printf("Product: %d\n",num1*num2);
     return 0;
 }
